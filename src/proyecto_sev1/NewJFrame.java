@@ -130,7 +130,7 @@ public class NewJFrame extends JFrameConFondo {
                 .addComponent(jBtn_ir_votantes, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jBtn_salir_sistema)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         jPnl_MENÚLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jBtn_ir_administrador, jBtn_ir_votantes, jBtn_salir_sistema});
