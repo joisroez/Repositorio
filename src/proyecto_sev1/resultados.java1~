@@ -1,0 +1,831 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+ * resultados.java
+ *
+ * Created on 11/06/2011, 00:41:36
+ */
+
+package proyecto_sev1;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Observable;
+import java.util.Observer;
+import java.util.StringTokenizer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Administrador
+ */
+public class resultados extends JFrameConFondo {
+
+    /** Creates new form resultados */
+    public resultados() throws FileNotFoundException, IOException {
+        initComponents();
+        setImagen("Recursos/negrom.jpg");
+        setLocationRelativeTo(null);// para que la ventana este siempre centrada
+        Reloj modelo=new Reloj();
+                modelo.addObserver (new Observer()
+                 {
+                     public void update (Observable unObservable, Object dato)
+                     {
+                         jLabel10.setText(""+dato);
+                     }
+                 });
+            //codigo para mostrar resultados de presidentes
+                 //correa
+            File archivo = null;
+            FileReader fr = null;
+            BufferedReader br = null;
+            archivo = new File("correa.txt");
+            fr = new FileReader(archivo);
+            br = new BufferedReader(fr);
+            // Lectura del fichero
+            String linea;
+            int lineac,sumac=0;
+            while ((linea = br.readLine()) != null)
+                {
+                    lineac = Integer.parseInt(linea);
+                    sumac=sumac+lineac;
+                    jTextField1.setText(""+sumac);
+                }
+                //lucio
+            File archivo1 = null;
+            FileReader fr1 = null;
+            BufferedReader br1 = null;
+            archivo1 = new File("lucio.txt");
+            fr1 = new FileReader(archivo1);
+            br1 = new BufferedReader(fr1);
+            // Lectura del fichero
+            String linea1;
+            int lineal,sumal=0;
+            while ((linea1 = br1.readLine()) != null)
+                {
+                    lineal = Integer.parseInt(linea1);
+                    sumal=sumal+lineal;
+                    jTextField2.setText(""+sumal);
+                }
+            //jamil
+            File archivo2 = null;
+            FileReader fr2 = null;
+            BufferedReader br2 = null;
+            archivo2 = new File("jamil.txt");
+            fr2 = new FileReader(archivo2);
+            br2 = new BufferedReader(fr2);
+            // Lectura del fichero
+            String linea2;
+            int lineaj,sumaj=0;
+            while ((linea2 = br2.readLine()) != null)
+                {
+                    lineaj = Integer.parseInt(linea2);
+                    sumaj=sumaj+lineaj;
+                    jTextField3.setText(""+sumaj);
+                }
+//            //roldos
+            File archivo3 = null;
+            FileReader fr3 = null;
+            BufferedReader br3 = null;
+            archivo3 = new File("roldos.txt");
+            fr3 = new FileReader(archivo3);
+            br3 = new BufferedReader(fr3);
+            // Lectura del fichero
+            String linea3;
+            int linear,sumar=0;
+            while ((linea3 = br3.readLine()) != null)
+                {
+                    linear = Integer.parseInt(linea3);
+                    sumar=sumar+linear;
+                    jTextField4.setText(""+sumar);
+                }
+//            //nulos
+            File archivo4 = null;
+            FileReader fr4 = null;
+            BufferedReader br4 = null;
+            archivo4 = new File("nulos.txt");
+            fr4 = new FileReader(archivo4);
+            br4 = new BufferedReader(fr4);
+            // Lectura del fichero
+            String linea4;
+            int linean,suman=0;
+            while ((linea4 = br4.readLine()) != null)
+                {
+                    linean = Integer.parseInt(linea4);
+                    suman=suman+linean;
+                    jTextField6.setText(""+suman);
+                }
+//            //blanco
+            File archivo5 = null;
+            FileReader fr5 = null;
+            BufferedReader br5 = null;
+            archivo5 = new File("blanco.txt");
+            fr5 = new FileReader(archivo5);
+            br5 = new BufferedReader(fr5);
+            // Lectura del fichero
+            String linea5;
+            int lineab,sumab=0;
+            while ((linea5 = br5.readLine()) != null)
+                {
+                    lineab = Integer.parseInt(linea5);
+                    sumab=sumab+lineab;
+                    jTextField5.setText(""+sumab);
+                }
+            //total
+                int total=sumac+sumal+sumaj+sumar+suman+sumab;
+
+                    jTextField7.setText(""+total);
+
+
+           ////
+    }
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        jTextField2 = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
+        jTextField3 = new javax.swing.JTextField();
+        jPanel5 = new javax.swing.JPanel();
+        jTextField4 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24));
+        jLabel1.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel1.setText("RESULTADOS ELECTORALES");
+        jLabel1.setName("jLabel1"); // NOI18N
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PRESIDENTES", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 51, 102))); // NOI18N
+        jPanel1.setName("jPanel1"); // NOI18N
+
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_sev1/Recursos/correa.JPG"))); // NOI18N
+        jLabel2.setName("jLabel2"); // NOI18N
+
+        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_sev1/Recursos/lucio.JPG"))); // NOI18N
+        jLabel3.setName("jLabel3"); // NOI18N
+
+        jLabel4.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_sev1/Recursos/jamil.JPG"))); // NOI18N
+        jLabel4.setName("jLabel4"); // NOI18N
+
+        jLabel5.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_sev1/Recursos/roldos.JPG"))); // NOI18N
+        jLabel5.setName("jLabel5"); // NOI18N
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel6.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel6.setText("Eco. Rafael Correa");
+        jLabel6.setName("jLabel6"); // NOI18N
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel7.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel7.setText("Crnl. Lucio Gutierrez");
+        jLabel7.setName("jLabel7"); // NOI18N
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel8.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel8.setText("Dr. Jamil Mahuad");
+        jLabel8.setName("jLabel8"); // NOI18N
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel9.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel9.setText("Ab. Jaime Roldos");
+        jLabel9.setName("jLabel9"); // NOI18N
+
+        jPanel2.setName("jPanel2"); // NOI18N
+
+        jTextField1.setEditable(false);
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextField1.setForeground(new java.awt.Color(51, 0, 102));
+        jTextField1.setName("jTextField1"); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel3.setName("jPanel3"); // NOI18N
+
+        jTextField2.setEditable(false);
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextField2.setForeground(new java.awt.Color(51, 0, 102));
+        jTextField2.setName("jTextField2"); // NOI18N
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel4.setName("jPanel4"); // NOI18N
+
+        jTextField3.setEditable(false);
+        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextField3.setForeground(new java.awt.Color(51, 0, 102));
+        jTextField3.setName("jTextField3"); // NOI18N
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel5.setName("jPanel5"); // NOI18N
+
+        jTextField4.setEditable(false);
+        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextField4.setForeground(new java.awt.Color(51, 0, 102));
+        jTextField4.setName("jTextField4"); // NOI18N
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel6))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel3))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel4))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel5))
+                .addContainerGap(22, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(101, 101, 101))
+        );
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel2, jLabel3, jLabel4, jLabel5});
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel6, jLabel7, jLabel8, jLabel9});
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jPanel2, jPanel3, jPanel4, jPanel5});
+
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel2, jLabel3, jLabel4, jLabel5});
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel6, jLabel7, jLabel8, jLabel9});
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPanel2, jPanel3, jPanel4, jPanel5});
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(51, 0, 102));
+        jButton1.setText("CANDIDATO GANADOR");
+        jButton1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 0, 102)));
+        jButton1.setName("jButton1"); // NOI18N
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jButton2.setForeground(new java.awt.Color(51, 0, 102));
+        jButton2.setText("----------SALIR----------");
+        jButton2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 0, 102)));
+        jButton2.setName("jButton2"); // NOI18N
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel10.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel10.setName("jLabel10"); // NOI18N
+
+        jTextField5.setEditable(false);
+        jTextField5.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextField5.setForeground(new java.awt.Color(102, 0, 102));
+        jTextField5.setName("jTextField5"); // NOI18N
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+
+        jTextField6.setEditable(false);
+        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextField6.setForeground(new java.awt.Color(102, 0, 102));
+        jTextField6.setName("jTextField6"); // NOI18N
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel11.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel11.setText("BLANCOS");
+        jLabel11.setName("jLabel11"); // NOI18N
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel12.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel12.setText("NULOS");
+        jLabel12.setName("jLabel12"); // NOI18N
+
+        jTextField7.setEditable(false);
+        jTextField7.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jTextField7.setForeground(new java.awt.Color(102, 0, 102));
+        jTextField7.setName("jTextField7"); // NOI18N
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel13.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel13.setText("TOTALES");
+        jLabel13.setName("jLabel13"); // NOI18N
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel14.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel14.setText("VOTOS:");
+        jLabel14.setName("jLabel14"); // NOI18N
+
+        jButton3.setText("DIPUTADOS/ALCALDES");
+        jButton3.setName("jButton3"); // NOI18N
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(114, 114, 114)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addGap(369, 369, 369))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton1)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButton2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(55, 55, 55)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel11)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(95, 95, 95)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jLabel12))
+                                                .addGap(83, 83, 83)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(111, 111, 111)
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
+                                        .addGap(58, 58, 58)))))
+                        .addGap(120, 120, 120)))
+                .addContainerGap())
+        );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2});
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jTextField5, jTextField6, jTextField7});
+
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel13))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(jButton1)
+                    .addComponent(jButton3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton1, jButton2});
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jTextField5, jTextField6, jTextField7});
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        // TODO add your handling code here:
+         editar ir = new editar();// crea objeto para ir a nueva ventana
+                    this.setVisible(false);//oculta la ventana actual
+                    ir.setVisible(true);//muestra la nueva ventana
+                    ir.setLocationRelativeTo(null);// para que la ventana este siempre centrada
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        int c=Integer.parseInt(jTextField1.getText());
+        int l=Integer.parseInt(jTextField2.getText());
+        int j=Integer.parseInt(jTextField3.getText());
+        int r=Integer.parseInt(jTextField4.getText());
+        int n=Integer.parseInt(jTextField6.getText());
+        int b=Integer.parseInt(jTextField5.getText());
+        int t= l+b;
+       
+        if(c>l&&c>j&&c>r)
+        {
+            try {
+                File archivo = null;
+                FileReader fr = null;
+                BufferedReader br = null;
+                archivo = new File("correa.txt");
+                fr = new FileReader(archivo);
+                br = new BufferedReader(fr);
+                // Lectura del fichero
+                String linea;
+                int lineac;
+                int sumac = 0;
+                try {
+                    while ((linea = br.readLine()) != null) {
+                        lineac = Integer.parseInt(linea);
+                        sumac = sumac + lineac;
+                    }
+                    File archivo5 = null;
+            FileReader fr5 = null;
+            BufferedReader br5 = null;
+            archivo5 = new File("blanco.txt");
+            fr5 = new FileReader(archivo5);
+            br5 = new BufferedReader(fr5);
+            // Lectura del fichero
+            String linea5;
+            int lineab,sumab=0;
+            while ((linea5 = br5.readLine()) != null)
+                {
+                    lineab = Integer.parseInt(linea5);
+                    sumab=sumab+lineab;
+                }
+                    int c1=sumac+sumab;
+                    jTextField1.setText("" + c1);
+                    JOptionPane.showMessageDialog(null, "ganador correa\n" + c1 + "  votos");
+                } catch (IOException ex) {
+                    Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(l>c&&l>j&&l>r)
+        {
+            try {
+                File archivo1 = null;
+                FileReader fr1 = null;
+                BufferedReader br1 = null;
+                archivo1 = new File("lucio.txt");
+                fr1 = new FileReader(archivo1);
+                br1 = new BufferedReader(fr1);
+                // Lectura del fichero
+                String linea1;
+                int lineal;
+                int sumal = 0;
+                try {
+                    while ((linea1 = br1.readLine()) != null) {
+                        lineal = Integer.parseInt(linea1);
+                        sumal = sumal + lineal;
+                    }
+            File archivo5 = null;
+            FileReader fr5 = null;
+            BufferedReader br5 = null;
+            archivo5 = new File("blanco.txt");
+            fr5 = new FileReader(archivo5);
+            br5 = new BufferedReader(fr5);
+            // Lectura del fichero
+            String linea5;
+            int lineab,sumab=0;
+            while ((linea5 = br5.readLine()) != null)
+                {
+                    lineab = Integer.parseInt(linea5);
+                    sumab=sumab+lineab;
+                }
+                    int l1=sumal+sumab;
+                    jTextField2.setText(""+l1);
+                    JOptionPane.showMessageDialog(null,"ganador lucio\n"+l1+"  votos");
+                } catch (IOException ex) {
+                    Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(j>c&&j>l&&j>r)
+        {
+            try {
+                File archivo2 = null;
+                FileReader fr2 = null;
+                BufferedReader br2 = null;
+                archivo2 = new File("jamil.txt");
+                fr2 = new FileReader(archivo2);
+                br2 = new BufferedReader(fr2);
+                // Lectura del fichero
+                String linea2;
+                int lineaj;
+                int sumaj = 0;
+                try {
+                    while ((linea2 = br2.readLine()) != null) {
+                        lineaj = Integer.parseInt(linea2);
+                        sumaj = sumaj + lineaj;
+                    }
+                    File archivo5 = null;
+            FileReader fr5 = null;
+            BufferedReader br5 = null;
+            archivo5 = new File("blanco.txt");
+            fr5 = new FileReader(archivo5);
+            br5 = new BufferedReader(fr5);
+            // Lectura del fichero
+            String linea5;
+            int lineab,sumab=0;
+            while ((linea5 = br5.readLine()) != null)
+                {
+                    lineab = Integer.parseInt(linea5);
+                    sumab=sumab+lineab;
+                }
+                    int j1=sumaj+sumab;
+                    jTextField3.setText("" + j1);
+                    JOptionPane.showMessageDialog(null, "ganador jamil\n" + j1 + "  votos");
+
+                } catch (IOException ex) {
+                    Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(r>c&&r>j&&r>l)
+        {
+            try {
+                File archivo3 = null;
+                FileReader fr3 = null;
+                BufferedReader br3 = null;
+                archivo3 = new File("roldos.txt");
+                fr3 = new FileReader(archivo3);
+                br3 = new BufferedReader(fr3);
+                // Lectura del fichero
+                String linea3;
+                int linear;
+                int sumar = 0;
+                try {
+                    while ((linea3 = br3.readLine()) != null) {
+                        linear = Integer.parseInt(linea3);
+                        sumar = sumar + linear;
+
+                    }
+                    File archivo5 = null;
+            FileReader fr5 = null;
+            BufferedReader br5 = null;
+            archivo5 = new File("blanco.txt");
+            fr5 = new FileReader(archivo5);
+            br5 = new BufferedReader(fr5);
+            // Lectura del fichero
+            String linea5;
+            int lineab,sumab=0;
+            while ((linea5 = br5.readLine()) != null)
+                {
+                    lineab = Integer.parseInt(linea5);
+                    sumab=sumab+lineab;
+                }
+            int r1=sumar+sumab;
+            jTextField4.setText("" +r1);
+            JOptionPane.showMessageDialog(null, "ganador roldos\n" + r1 + "  votos");
+                } catch (IOException ex) {
+                    Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                JOptionPane.showMessageDialog(null, "ganador roldos\n" + (r + b) + "  votos");
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+        
+
+
+
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        // TODO add your handling code here:
+       diputados_alcaldes da=new diputados_alcaldes();
+       da.setVisible(true);
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    /**
+    * @param args the command line arguments
+    */
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    new resultados().setVisible(true);
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    // End of variables declaration//GEN-END:variables
+
+}

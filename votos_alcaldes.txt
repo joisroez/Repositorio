@@ -1,0 +1,4 @@
+Cdp_Gdp_Mdp_Rdp_B_N       0       1       0       0       0       0
+Cdp_Gdp_Mdp_Rdp_B_N       0       0       0       0       0       1
+Cdp_Gdp_Mdp_Rdp_B_N       0       0       0       0       1       0
+Cdp_Gdp_Mdp_Rdp_B_N       0       0       0       0       1       0

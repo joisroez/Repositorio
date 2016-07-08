@@ -1,0 +1,255 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLbl_SistemaElectronicaVotaciones" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="258" max="-2" attributes="0"/>
+                      <Component id="jLbl_reloj" min="-2" pref="220" max="-2" attributes="1"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLbl_imagenSEV" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="1">
+                              <Component id="jLbl_gifBanderaMapa" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLbl_SEV" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPnl_MENÚ" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbl_gifEcuador" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+              <Component id="jLbl_SistemaElectronicaVotaciones" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLbl_gifBanderaMapa" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbl_SEV" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="jLbl_gifEcuador" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jPnl_MENÚ" max="32767" attributes="1"/>
+                  <Component id="jLbl_imagenSEV" alignment="0" max="32767" attributes="1"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jLbl_reloj" min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLbl_reloj">
+      <Properties>
+        <Property name="background" type="java.awt.Color" resourceKey="jLbl_reloj.background"/>
+        <Property name="foreground" type="java.awt.Color" resourceKey="jLbl_reloj.foreground"/>
+        <Property name="text" type="java.lang.String" resourceKey="jLbl_reloj.text"/>
+        <Property name="name" type="java.lang.String" value="jLbl_reloj" noResource="true"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPnl_MEN&#xda;">
+      <Properties>
+        <Property name="background" type="java.awt.Color" resourceKey="jPnl_MEN&#xda;.background"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder justification="2" title="MEN&#xda;">
+              <Property name="titleX" resourceKey="jPnl_MEN&#xda;.border.title"/>
+              <Property name="font" resourceKey="jPnl_MEN&#xda;.border.titleFont"/>
+              <Property name="color" resourceKey="jPnl_MEN&#xda;.border.titleColor"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="jPnl_MEN&#xda;" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="jLbl_imagenVotos" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jBtn_ir_administrador" linkSize="1" alignment="0" min="-2" pref="139" max="-2" attributes="1"/>
+                              <Component id="jBtn_ir_votantes" linkSize="1" alignment="0" pref="139" max="32767" attributes="1"/>
+                              <Component id="jBtn_salir_sistema" linkSize="1" alignment="0" pref="139" max="32767" attributes="1"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLbl_imagenVotos" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jBtn_ir_administrador" linkSize="2" min="-2" pref="23" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jBtn_ir_votantes" linkSize="2" min="-2" pref="23" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jBtn_salir_sistema" linkSize="2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jBtn_ir_votantes">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="jBtn_salir_sistema.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="jButton1.foreground"/>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="jBtn_ir_votantes.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="jBtn_ir_votantes.text"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="2" top="2">
+                  <Property name="color" resourceKey="jBtn_salir_sistema.border.matteColor"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="jBtn_ir_votantes" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBtn_ir_votantesMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jBtn_ir_administrador">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="jBtn_salir_sistema.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="jButton1.foreground"/>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="jBtn_ir_administrador.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="jBtn_ir_administrador.text"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="2" top="2">
+                  <Property name="color" resourceKey="jBtn_salir_sistema.border.matteColor"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="jBtn_ir_administrador" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBtn_ir_administradorMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jBtn_salir_sistema">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="jBtn_salir_sistema.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="jButton1.foreground"/>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="jBtn_salir_sistema.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="jBtn_salir_sistema.text"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="2" top="2">
+                  <Property name="color" resourceKey="jBtn_salir_sistema.border.matteColor"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="jBtn_salir_sistema" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBtn_salir_sistemaMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLbl_imagenVotos">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="jLbl_imagenVotos.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="jLbl_imagenVotos.text"/>
+            <Property name="name" type="java.lang.String" value="jLbl_imagenVotos" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLbl_imagenSEV">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" resourceKey="jLbl_imagenSEV.icon"/>
+        <Property name="text" type="java.lang.String" resourceKey="jLbl_imagenSEV.text"/>
+        <Property name="name" type="java.lang.String" value="jLbl_imagenSEV" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLbl_SEV">
+      <Properties>
+        <Property name="font" type="java.awt.Font" resourceKey="jLbl_SEV.font"/>
+        <Property name="foreground" type="java.awt.Color" resourceKey="jLbl_SEV.foreground"/>
+        <Property name="text" type="java.lang.String" resourceKey="jLbl_SEV.text"/>
+        <Property name="name" type="java.lang.String" value="jLbl_SEV" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLbl_SistemaElectronicaVotaciones">
+      <Properties>
+        <Property name="font" type="java.awt.Font" resourceKey="jLbl_SistemaElectronicaVotaciones.font"/>
+        <Property name="foreground" type="java.awt.Color" resourceKey="jLbl_SistemaElectronicaVotaciones.foreground"/>
+        <Property name="text" type="java.lang.String" resourceKey="jLbl_SistemaElectronicaVotaciones.text"/>
+        <Property name="name" type="java.lang.String" value="jLbl_SistemaElectronicaVotaciones" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLbl_gifBanderaMapa">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" resourceKey="jLbl_gifBanderaMapa.icon"/>
+        <Property name="text" type="java.lang.String" resourceKey="jLbl_gifBanderaMapa.text"/>
+        <Property name="name" type="java.lang.String" value="jLbl_gifBanderaMapa" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLbl_gifEcuador">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" resourceKey="jLbl_gifEcuador.icon"/>
+        <Property name="text" type="java.lang.String" resourceKey="jLbl_gifEcuador.text"/>
+        <Property name="name" type="java.lang.String" value="jLbl_gifEcuador" noResource="true"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

@@ -1,0 +1,1 @@
+sumainicio_sumafin    48240000    48480000    13    24    13    28

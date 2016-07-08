@@ -1,0 +1,5 @@
+﻿CEDULA_IDENT	 CODIGO	 NOMBRE	 APELLIDO	 DIRECCION	 LUG_NACIMIENTO	EST_CIVIL	GENERO	 DIA_NAC	 MES_NAC	 AÑO_NAC	 NACIONALIDAD	 
+1311901001	00001	Jose_Luis	Romero_Cortez	Chaguarquingo	Manabí	Solter@	MASCULINO	28	11	1988	Ecutoriana	
+0401582176	00002	Naty_Maritza	Rosero_Velasco	Carapungo	Carchi	Solter@	FEMENINO	12	8	1990	Ecutoriana	
+1723599443	00003	Gema_Elizabeth	Palacios_Macias	Registro_Civil	Los_Ríos	Solter@	FEMENINO	31	12	1940	Ecutoriana	
+1722696992	00004	Alejandro_Rogelio	Lescano_Legarda	Comite_del_Pueblo	Los_Ríos	Uniòn_Libre	MASCULINO	29	2	1944	Ecutoriana	

@@ -1,0 +1,132 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package proyecto_sev1;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+/**
+ *
+ * @author Usuario
+ */
+public class buscar {
+     private String archivo;
+     private String palabra;
+
+    public buscar(String Archivo) {
+        this.archivo = Archivo;
+    }
+
+    //Extrae toda la línea de texto
+    public String BuscarDatos(String Palabra) {
+        this.palabra = Palabra;
+        String salida="";
+
+        try{
+            FileReader archivoEntrada = new FileReader(archivo);
+            BufferedReader fr = new BufferedReader(archivoEntrada);
+            String c;
+            String aux;
+            while((c=fr.readLine()) != null)
+            {
+                StringTokenizer tokenizador = new StringTokenizer(c,"\t");
+
+                while (tokenizador.hasMoreTokens()){
+
+                    if (tokenizador.nextToken().equals(palabra))
+                    {
+                        salida+= c + "!";
+                        break;
+                    }
+                }
+            }
+            fr.close();
+        }
+        catch(IOException fnfe){
+            salida = fnfe.toString();
+        }
+
+        return salida;
+    }
+
+    public String abrirTodo(String Palabra, String dato2){
+        this.palabra = Palabra;
+        String salida="";
+
+        try{
+            FileReader archivoEntrada = new FileReader(archivo);
+            BufferedReader fr = new BufferedReader(archivoEntrada);
+            String c;
+            String aux;
+            while((c=fr.readLine()) != null)
+            {
+                StringTokenizer tokenizador = new StringTokenizer(c,"\t");
+                while (tokenizador.hasMoreTokens()){
+                    aux = c;
+                    if (tokenizador.nextToken().equals(palabra))
+                    {
+                        StringTokenizer tokaux = new StringTokenizer(aux,"\t");
+                        while (tokaux.hasMoreTokens()){
+                            if (tokaux.nextToken().equals(dato2)){
+                                salida+= c + "\n";
+                                break;
+                            }
+                        }
+                        break;
+
+                    }
+                }
+            }
+            fr.close();
+        }
+        catch(IOException fnfe){
+            salida = fnfe.toString();
+        }
+
+        return salida;
+    }
+        public String abrirTodo(String Palabra, String dato1, String dato2){
+            this.palabra = Palabra;
+            String salida="";
+
+            String datos = abrirTodo(palabra,dato1);
+            StringTokenizer tok = new StringTokenizer(datos,"\n");
+            while(tok.hasMoreTokens()){
+                String c = tok.nextToken().toString();
+                StringTokenizer tok2 = new StringTokenizer(c,"\t");
+                while (tok2.hasMoreTokens()){
+                    if (tok2.nextToken().equals(dato2)){
+                        salida += c + "\n";
+                        break;
+                    }
+                }
+            }
+
+
+            return salida;
+        }
+
+        public String abrirTodo(String Palabra, String dato1, String dato2,String dato3){
+            this.palabra = Palabra;
+            String salida="";
+
+            String datos = abrirTodo(palabra,dato1,dato2);
+            StringTokenizer tok = new StringTokenizer(datos,"\n");
+            while(tok.hasMoreTokens()){
+                String c = tok.nextToken().toString();
+                StringTokenizer tok2 = new StringTokenizer(c,"\t");
+                while (tok2.hasMoreTokens()){
+                    if (tok2.nextToken().equals(dato3)){
+                        salida += c + "\n";
+                        break;
+                    }
+                }
+            }
+            return salida;
+        }
+}
+
